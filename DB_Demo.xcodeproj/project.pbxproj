@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100F9EF61EADACB000E7FBCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9EF51EADACB000E7FBCA /* main.m */; };
+		100F9EF91EADACB000E7FBCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9EF81EADACB000E7FBCA /* AppDelegate.m */; };
+		100F9EFC1EADACB000E7FBCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9EFB1EADACB000E7FBCA /* ViewController.m */; };
+		100F9EFF1EADACB000E7FBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100F9EFD1EADACB000E7FBCA /* Main.storyboard */; };
+		100F9F011EADACB000E7FBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100F9F001EADACB000E7FBCA /* Assets.xcassets */; };
+		100F9F041EADACB000E7FBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100F9F021EADACB000E7FBCA /* LaunchScreen.storyboard */; };
+		100F9F0F1EADACB000E7FBCA /* DB_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F0E1EADACB000E7FBCA /* DB_DemoTests.m */; };
+		100F9F1A1EADACB000E7FBCA /* DB_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F191EADACB000E7FBCA /* DB_DemoUITests.m */; };
+		100F9F5C1EADADD600E7FBCA /* DB_DatabaseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F521EADADD600E7FBCA /* DB_DatabaseConstants.m */; };
+		100F9F5D1EADADD600E7FBCA /* DB_DatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F541EADADD600E7FBCA /* DB_DatabaseHelper.m */; };
+		100F9F5F1EADADD600E7FBCA /* DB_DBOperationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F581EADADD600E7FBCA /* DB_DBOperationContext.m */; };
+		100F9F601EADADD600E7FBCA /* DB_TableSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F5A1EADADD600E7FBCA /* DB_TableSQL.m */; };
+		100F9F611EADADD600E7FBCA /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 100F9F5B1EADADD600E7FBCA /* ReadMe */; };
+		100F9F641EADCECD00E7FBCA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 100F9F631EADCECD00E7FBCA /* libsqlite3.0.tbd */; };
+		100F9F6A1EADCFCA00E7FBCA /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F9F691EADCFCA00E7FBCA /* BaseModel.m */; };
+		1031B2771EADDD1F008825A1 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031B2761EADDD1F008825A1 /* NSObject+Property.m */; };
+		1031B27D1EADE3AF008825A1 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031B27C1EADE3AF008825A1 /* UserModel.m */; };
+		281C57C429544765821CA901 /* Pods_DB_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A26BBB488CCAC2E3897F04 /* Pods_DB_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		100F9F0B1EADACB000E7FBCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100F9EE91EADACB000E7FBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100F9EF01EADACB000E7FBCA;
+			remoteInfo = DB_Demo;
+		};
+		100F9F161EADACB000E7FBCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100F9EE91EADACB000E7FBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100F9EF01EADACB000E7FBCA;
+			remoteInfo = DB_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100F9EF11EADACB000E7FBCA /* DB_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DB_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100F9EF51EADACB000E7FBCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		100F9EF71EADACB000E7FBCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		100F9EF81EADACB000E7FBCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		100F9EFA1EADACB000E7FBCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		100F9EFB1EADACB000E7FBCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		100F9EFE1EADACB000E7FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		100F9F001EADACB000E7FBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100F9F031EADACB000E7FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		100F9F051EADACB000E7FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100F9F0A1EADACB000E7FBCA /* DB_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DB_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100F9F0E1EADACB000E7FBCA /* DB_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DB_DemoTests.m; sourceTree = "<group>"; };
+		100F9F101EADACB000E7FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100F9F151EADACB000E7FBCA /* DB_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DB_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100F9F191EADACB000E7FBCA /* DB_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DB_DemoUITests.m; sourceTree = "<group>"; };
+		100F9F1B1EADACB000E7FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100F9F511EADADD600E7FBCA /* DB_DatabaseConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_DatabaseConstants.h; sourceTree = "<group>"; };
+		100F9F521EADADD600E7FBCA /* DB_DatabaseConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB_DatabaseConstants.m; sourceTree = "<group>"; };
+		100F9F531EADADD600E7FBCA /* DB_DatabaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_DatabaseHelper.h; sourceTree = "<group>"; };
+		100F9F541EADADD600E7FBCA /* DB_DatabaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB_DatabaseHelper.m; sourceTree = "<group>"; };
+		100F9F571EADADD600E7FBCA /* DB_DBOperationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_DBOperationContext.h; sourceTree = "<group>"; };
+		100F9F581EADADD600E7FBCA /* DB_DBOperationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB_DBOperationContext.m; sourceTree = "<group>"; };
+		100F9F591EADADD600E7FBCA /* DB_TableSQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_TableSQL.h; sourceTree = "<group>"; };
+		100F9F5A1EADADD600E7FBCA /* DB_TableSQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB_TableSQL.m; sourceTree = "<group>"; };
+		100F9F5B1EADADD600E7FBCA /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
+		100F9F631EADCECD00E7FBCA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		100F9F681EADCFCA00E7FBCA /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		100F9F691EADCFCA00E7FBCA /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		1031B2751EADDD1F008825A1 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		1031B2761EADDD1F008825A1 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		1031B27B1EADE3AF008825A1 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		1031B27C1EADE3AF008825A1 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		1D9A27D254DFE8E610ABB657 /* Pods-DB_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DB_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DB_Demo/Pods-DB_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		34F4272BF510A53270BCE50D /* Pods-DB_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DB_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DB_Demo/Pods-DB_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A2A26BBB488CCAC2E3897F04 /* Pods_DB_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DB_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100F9EEE1EADACB000E7FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F9F641EADCECD00E7FBCA /* libsqlite3.0.tbd in Frameworks */,
+				281C57C429544765821CA901 /* Pods_DB_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100F9F071EADACB000E7FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100F9F121EADACB000E7FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100F9EE81EADACB000E7FBCA = {
+			isa = PBXGroup;
+			children = (
+				100F9EF31EADACB000E7FBCA /* DB_Demo */,
+				100F9F0D1EADACB000E7FBCA /* DB_DemoTests */,
+				100F9F181EADACB000E7FBCA /* DB_DemoUITests */,
+				100F9EF21EADACB000E7FBCA /* Products */,
+				100F9F621EADCECD00E7FBCA /* Frameworks */,
+				2BA88910A30FD45A776CF5AD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		100F9EF21EADACB000E7FBCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100F9EF11EADACB000E7FBCA /* DB_Demo.app */,
+				100F9F0A1EADACB000E7FBCA /* DB_DemoTests.xctest */,
+				100F9F151EADACB000E7FBCA /* DB_DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100F9EF31EADACB000E7FBCA /* DB_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				100F9F501EADADD600E7FBCA /* DataBaseKit */,
+				100F9EF71EADACB000E7FBCA /* AppDelegate.h */,
+				100F9EF81EADACB000E7FBCA /* AppDelegate.m */,
+				100F9F681EADCFCA00E7FBCA /* BaseModel.h */,
+				100F9F691EADCFCA00E7FBCA /* BaseModel.m */,
+				100F9EFA1EADACB000E7FBCA /* ViewController.h */,
+				100F9EFB1EADACB000E7FBCA /* ViewController.m */,
+				1031B27B1EADE3AF008825A1 /* UserModel.h */,
+				1031B27C1EADE3AF008825A1 /* UserModel.m */,
+				100F9EFD1EADACB000E7FBCA /* Main.storyboard */,
+				100F9F001EADACB000E7FBCA /* Assets.xcassets */,
+				100F9F021EADACB000E7FBCA /* LaunchScreen.storyboard */,
+				100F9F051EADACB000E7FBCA /* Info.plist */,
+				100F9EF41EADACB000E7FBCA /* Supporting Files */,
+			);
+			path = DB_Demo;
+			sourceTree = "<group>";
+		};
+		100F9EF41EADACB000E7FBCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				100F9EF51EADACB000E7FBCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		100F9F0D1EADACB000E7FBCA /* DB_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				100F9F0E1EADACB000E7FBCA /* DB_DemoTests.m */,
+				100F9F101EADACB000E7FBCA /* Info.plist */,
+			);
+			path = DB_DemoTests;
+			sourceTree = "<group>";
+		};
+		100F9F181EADACB000E7FBCA /* DB_DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				100F9F191EADACB000E7FBCA /* DB_DemoUITests.m */,
+				100F9F1B1EADACB000E7FBCA /* Info.plist */,
+			);
+			path = DB_DemoUITests;
+			sourceTree = "<group>";
+		};
+		100F9F501EADADD600E7FBCA /* DataBaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				100F9F511EADADD600E7FBCA /* DB_DatabaseConstants.h */,
+				100F9F521EADADD600E7FBCA /* DB_DatabaseConstants.m */,
+				100F9F531EADADD600E7FBCA /* DB_DatabaseHelper.h */,
+				100F9F541EADADD600E7FBCA /* DB_DatabaseHelper.m */,
+				100F9F571EADADD600E7FBCA /* DB_DBOperationContext.h */,
+				100F9F581EADADD600E7FBCA /* DB_DBOperationContext.m */,
+				100F9F591EADADD600E7FBCA /* DB_TableSQL.h */,
+				100F9F5A1EADADD600E7FBCA /* DB_TableSQL.m */,
+				1031B2751EADDD1F008825A1 /* NSObject+Property.h */,
+				1031B2761EADDD1F008825A1 /* NSObject+Property.m */,
+				100F9F5B1EADADD600E7FBCA /* ReadMe */,
+			);
+			path = DataBaseKit;
+			sourceTree = "<group>";
+		};
+		100F9F621EADCECD00E7FBCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				100F9F631EADCECD00E7FBCA /* libsqlite3.0.tbd */,
+				A2A26BBB488CCAC2E3897F04 /* Pods_DB_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BA88910A30FD45A776CF5AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34F4272BF510A53270BCE50D /* Pods-DB_Demo.debug.xcconfig */,
+				1D9A27D254DFE8E610ABB657 /* Pods-DB_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100F9EF01EADACB000E7FBCA /* DB_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100F9F1E1EADACB000E7FBCA /* Build configuration list for PBXNativeTarget "DB_Demo" */;
+			buildPhases = (
+				3E8E066E63EE379C2530E7EE /* [CP] Check Pods Manifest.lock */,
+				100F9EED1EADACB000E7FBCA /* Sources */,
+				100F9EEE1EADACB000E7FBCA /* Frameworks */,
+				100F9EEF1EADACB000E7FBCA /* Resources */,
+				E7473F4268E692B380BB6035 /* [CP] Embed Pods Frameworks */,
+				D744912CC25755DEA225F17E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DB_Demo;
+			productName = DB_Demo;
+			productReference = 100F9EF11EADACB000E7FBCA /* DB_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100F9F091EADACB000E7FBCA /* DB_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100F9F211EADACB000E7FBCA /* Build configuration list for PBXNativeTarget "DB_DemoTests" */;
+			buildPhases = (
+				100F9F061EADACB000E7FBCA /* Sources */,
+				100F9F071EADACB000E7FBCA /* Frameworks */,
+				100F9F081EADACB000E7FBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100F9F0C1EADACB000E7FBCA /* PBXTargetDependency */,
+			);
+			name = DB_DemoTests;
+			productName = DB_DemoTests;
+			productReference = 100F9F0A1EADACB000E7FBCA /* DB_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		100F9F141EADACB000E7FBCA /* DB_DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100F9F241EADACB000E7FBCA /* Build configuration list for PBXNativeTarget "DB_DemoUITests" */;
+			buildPhases = (
+				100F9F111EADACB000E7FBCA /* Sources */,
+				100F9F121EADACB000E7FBCA /* Frameworks */,
+				100F9F131EADACB000E7FBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100F9F171EADACB000E7FBCA /* PBXTargetDependency */,
+			);
+			name = DB_DemoUITests;
+			productName = DB_DemoUITests;
+			productReference = 100F9F151EADACB000E7FBCA /* DB_DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100F9EE91EADACB000E7FBCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "支舍社";
+				TargetAttributes = {
+					100F9EF01EADACB000E7FBCA = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					100F9F091EADACB000E7FBCA = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 100F9EF01EADACB000E7FBCA;
+					};
+					100F9F141EADACB000E7FBCA = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 100F9EF01EADACB000E7FBCA;
+					};
+				};
+			};
+			buildConfigurationList = 100F9EEC1EADACB000E7FBCA /* Build configuration list for PBXProject "DB_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100F9EE81EADACB000E7FBCA;
+			productRefGroup = 100F9EF21EADACB000E7FBCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100F9EF01EADACB000E7FBCA /* DB_Demo */,
+				100F9F091EADACB000E7FBCA /* DB_DemoTests */,
+				100F9F141EADACB000E7FBCA /* DB_DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100F9EEF1EADACB000E7FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F9F611EADADD600E7FBCA /* ReadMe in Resources */,
+				100F9F041EADACB000E7FBCA /* LaunchScreen.storyboard in Resources */,
+				100F9F011EADACB000E7FBCA /* Assets.xcassets in Resources */,
+				100F9EFF1EADACB000E7FBCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100F9F081EADACB000E7FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100F9F131EADACB000E7FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E8E066E63EE379C2530E7EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D744912CC25755DEA225F17E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DB_Demo/Pods-DB_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7473F4268E692B380BB6035 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DB_Demo/Pods-DB_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100F9EED1EADACB000E7FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F9F5F1EADADD600E7FBCA /* DB_DBOperationContext.m in Sources */,
+				100F9EFC1EADACB000E7FBCA /* ViewController.m in Sources */,
+				1031B2771EADDD1F008825A1 /* NSObject+Property.m in Sources */,
+				100F9EF91EADACB000E7FBCA /* AppDelegate.m in Sources */,
+				100F9F601EADADD600E7FBCA /* DB_TableSQL.m in Sources */,
+				100F9F5D1EADADD600E7FBCA /* DB_DatabaseHelper.m in Sources */,
+				100F9F6A1EADCFCA00E7FBCA /* BaseModel.m in Sources */,
+				100F9EF61EADACB000E7FBCA /* main.m in Sources */,
+				1031B27D1EADE3AF008825A1 /* UserModel.m in Sources */,
+				100F9F5C1EADADD600E7FBCA /* DB_DatabaseConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100F9F061EADACB000E7FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F9F0F1EADACB000E7FBCA /* DB_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100F9F111EADACB000E7FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F9F1A1EADACB000E7FBCA /* DB_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		100F9F0C1EADACB000E7FBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100F9EF01EADACB000E7FBCA /* DB_Demo */;
+			targetProxy = 100F9F0B1EADACB000E7FBCA /* PBXContainerItemProxy */;
+		};
+		100F9F171EADACB000E7FBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100F9EF01EADACB000E7FBCA /* DB_Demo */;
+			targetProxy = 100F9F161EADACB000E7FBCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		100F9EFD1EADACB000E7FBCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100F9EFE1EADACB000E7FBCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		100F9F021EADACB000E7FBCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100F9F031EADACB000E7FBCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		100F9F1C1EADACB000E7FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		100F9F1D1EADACB000E7FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		100F9F1F1EADACB000E7FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F4272BF510A53270BCE50D /* Pods-DB_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DB_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fcihpy.DB-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		100F9F201EADACB000E7FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D9A27D254DFE8E610ABB657 /* Pods-DB_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DB_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fcihpy.DB-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		100F9F221EADACB000E7FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DB_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fcihpy.DB-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DB_Demo.app/DB_Demo";
+			};
+			name = Debug;
+		};
+		100F9F231EADACB000E7FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DB_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fcihpy.DB-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DB_Demo.app/DB_Demo";
+			};
+			name = Release;
+		};
+		100F9F251EADACB000E7FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DB_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fcihpy.DB-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DB_Demo;
+			};
+			name = Debug;
+		};
+		100F9F261EADACB000E7FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DB_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fcihpy.DB-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DB_Demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100F9EEC1EADACB000E7FBCA /* Build configuration list for PBXProject "DB_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100F9F1C1EADACB000E7FBCA /* Debug */,
+				100F9F1D1EADACB000E7FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100F9F1E1EADACB000E7FBCA /* Build configuration list for PBXNativeTarget "DB_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100F9F1F1EADACB000E7FBCA /* Debug */,
+				100F9F201EADACB000E7FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100F9F211EADACB000E7FBCA /* Build configuration list for PBXNativeTarget "DB_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100F9F221EADACB000E7FBCA /* Debug */,
+				100F9F231EADACB000E7FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100F9F241EADACB000E7FBCA /* Build configuration list for PBXNativeTarget "DB_DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100F9F251EADACB000E7FBCA /* Debug */,
+				100F9F261EADACB000E7FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100F9EE91EADACB000E7FBCA /* Project object */;
+}

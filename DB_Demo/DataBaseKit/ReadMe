@@ -1,0 +1,62 @@
+//userIdi不能为空
+if (!self.userId) {
+CHCLog(@"存数据库时用户ID为空")
+return;
+}
+NSDictionary *updateDict = @{
+USER_ID : self.userId ,
+NAME : self.name,
+GENDER : self.gender,
+BIRTHDAY : self.birthday,
+NICK_NAME : self.nickName,
+HEAD_IMAGEID : self.headImgId,
+BLOODTYPE : self.bloodType,
+SUBSBABIESNU :self.subsBabiesNum,
+IS_BABY : @0
+};
+
+//根据uesrId，从数据库里查询是否有数据，有数据则更新，没数据则插入
+NSString *filterSQL = [NSString stringWithFormat:@"%@ = '%@'",USER_ID,self.userId];
+NSInteger count = [self.databaseHelper countOfTableName:TABLE_CHC_USER_INFO whereSQL:filterSQL];
+TableOpertaionType operationType = TableOpertaionTypeNone;
+if (count > 0) {
+operationType = TableOpertaionTypeUpdate;
+}else {
+operationType = TableOpertaionTypeInsert;
+}
+//创建SQL方法一:
+NSString *insertSQL2 = [NSString stringWithFormat:@"%@ = %@,%@ = %@,%@ = %@,%@ = %@,%@ = %@,%@ = %@,%@ = %@",
+NAME,self.name,
+GENDER,self.gender,
+BIRTHDAY,self.birthday,
+NICK_NAME,self.nickName,
+HEAD_IMAGEID,self.headImgId,
+BLOODTYPE,self.bloodType,
+SUBSBABIESNU,self.subsBabiesNum
+];
+//创建SQL方法一:
+NSMutableString *tempSQL = [NSMutableString string];
+[updateDict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+
+if (![key isEqualToString:USER_ID]) {
+[tempSQL appendFormat:@"%@ = %@,",key,obj];
+}
+}];
+NSMutableString *insertSQL = [NSMutableString stringWithFormat:@"%@ %@",[tempSQL substringToIndex:tempSQL.length - 1],filterSQL];
+//创建context方法一:
+CHCDBOperationContext *context = [CHCDBOperationContext handleDataContextWithTableName:TABLE_CHC_USER_INFO
+opertionType:operationType
+updateDict:updateDict
+whereSQL:insertSQL];
+
+//创建context方法二：
+CHCDBOperationContext *context2 = [CHCDBOperationContext new];
+context2.tableName = TABLE_CHC_USER_INFO;
+context2.updateDict = updateDict;
+context2.opertionType = operationType;
+context2.whereSQL = insertSQL;
+[self.databaseHelper handleDataWithDBOperationContext:context2
+resultBlock:^(BOOL isSuccess, NSString *resultMsg) {
+CHCLog(@"%d-- %@",isSuccess,resultMsg);
+
+}];
